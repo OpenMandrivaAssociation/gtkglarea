@@ -16,6 +16,7 @@ Group:		System/Libraries
 
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		gtkglarea-1.2.3-fix-underquoted-calls.patch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.student.oulu.fi/~jlof/gtkglarea/
 BuildRequires:	mesaglu-devel
 BuildRequires:	gtk+-devel
