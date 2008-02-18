@@ -1,6 +1,6 @@
 %define name gtkglarea
 %define version 1.2.3
-%define release %mkrel 10
+%define release %mkrel 11
 
 %define major 5
 %define libname %mklibname %{name} %major
