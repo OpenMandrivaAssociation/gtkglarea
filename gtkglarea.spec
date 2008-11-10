@@ -1,25 +1,20 @@
-%define name gtkglarea
-%define version 1.2.3
-%define release %mkrel 13
-
 %define major 5
 %define libname %mklibname %{name} %major
 %define develname %mklibname %{name} -d
 
-
 Summary:	OpenGL widget for GTK+ 1.2
-Name:		%{name}
-Version:	%{version}
-Release: 	%{release}
+Name:		gtkglarea
+Version:	1.2.3
+Release: 	%mkrel 13
 License:	LGPL
 Group:		System/Libraries
-
+URL:		http://www.student.oulu.fi/~jlof/gtkglarea/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		gtkglarea-1.2.3-fix-underquoted-calls.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:		http://www.student.oulu.fi/~jlof/gtkglarea/
 BuildRequires:	mesaglu-devel
 BuildRequires:	gtk+-devel
+BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Just as GTK+ is build on top of GDK, GtkGLArea is built on top of gdkgl which
@@ -59,6 +54,7 @@ Libraries and includes files you can use for GtkGLArea development.
 %patch0 -p1 -b .underquoted
 
 %build
+autoreconf -fis
 %configure
 %make
 
