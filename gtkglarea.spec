@@ -5,7 +5,7 @@
 Summary:	OpenGL widget for GTK+ 1.2
 Name:		gtkglarea
 Version:	1.2.3
-Release: 	%mkrel 14
+Release: 	%mkrel 15
 License:	LGPL
 Group:		System/Libraries
 URL:		http://www.student.oulu.fi/~jlof/gtkglarea/
