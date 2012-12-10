@@ -1,0 +1,11 @@
+--- gtkglarea-1.2.3/examples/simple.c.printf	2000-04-26 00:10:37.000000000 +0400
++++ gtkglarea-1.2.3/examples/simple.c	2012-11-02 21:20:02.337810894 +0400
+@@ -157,7 +157,7 @@ int main(int argc, char **argv)
+ 
+   /* vendor dependent version info string */
+   info_str = gdk_gl_get_info();
+-  g_print(info_str);
++  g_print("%s", info_str);
+   g_free(info_str);
+ 
+   gtk_main();
