@@ -8,7 +8,7 @@ Version:	1.2.3
 Release: 	15
 License:	LGPL
 Group:		System/Libraries
-URL:		http://www.student.oulu.fi/~jlof/gtkglarea/
+URL:		https://www.student.oulu.fi/~jlof/gtkglarea/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		gtkglarea-1.2.3-fix-underquoted-calls.patch
 patch1:		gtkglarea-1.2.3.printf.patch
